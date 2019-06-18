@@ -6,7 +6,7 @@ var express = require("express"),
 description = require("./projdesc.json"),
    mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://clbfshr@yahoo.com:DBmongo24!@cluster0-wtgf6.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://jfish15:DBmongo24!@cluster0-wtgf6.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
 app.use(express.static("public"));
 app.use(express.static("Images"));
 
@@ -112,8 +112,10 @@ app.get("/projects/results", function(req, res){
 
 
 
-
-
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("The YelpCamp Server has Started!");
 });
+
+// app.listen(3000, function(){
+//     console.log("The YelpCamp Server has Started!");
+// });
