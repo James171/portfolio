@@ -6,7 +6,7 @@ var express = require("express"),
 description = require("./projdesc.json"),
    mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/users", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://jfish15:<DBmongo24>@cluster0-wtgf6.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
 app.use(express.static("public"));
 app.use(express.static("Images"));
 
