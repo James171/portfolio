@@ -1,0 +1,49 @@
+<% include ../partials/header %>
+<link rel="stylesheet" type="text/css" href="projects.css">
+
+
+
+
+<div class="projects_container">
+
+	<div class="child_proj" onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">
+		<h3>Color Game</h3>
+		<a href="colorGame.html">
+		<img src="ColorGameImg.png">
+		</a>
+	</div>
+	<div class="child_proj" onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">
+		<h3>Patatap Clone</h3>
+		<a href="circles.html">
+		<img src="patatap_clone.png">
+		</a>
+	</div>
+	<div class="child_proj" onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">
+		<h3>IMDb Search</h3>
+		<a href="/projects/search">
+		<img src="Imdb_search.png">
+		</a>
+	</div>
+	<div class="child_proj" onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">
+		<h3>YelpCamp</h3>
+		<a href="https://cryptic-reef-97106.herokuapp.com/">
+		<img src="blog_site.png">
+		</a>
+	</div>
+	<div class="child_proj" onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">
+		<h3>Simple To-do List</h3>
+		<a href="index_1.html">
+		<img src="todolist_pic.png">
+		</a>
+	</div>
+	<div class="child_proj" onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">
+		<h3>Catalog</h3>
+		<a href="https://catalog-app1.herokuapp.com/">
+		<img src="catalog.png">
+		</a>
+	</div>
+
+</div>
+
+<script>var please = <%- JSON.stringify(config) %></script>
+<script type="text/javascript" src="../projects.js"></script>

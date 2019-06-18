@@ -1,0 +1,82 @@
+body {
+  position: relative;
+}
+
+
+#_ {
+  display:block;
+  width: 50%;
+  height:85%;
+  font-size:35px;
+  position: absolute;
+  margin: auto;
+  top: 20%;
+  left: 25%;
+  /*font-family: Helvetica,Arial, sans-serif;*/
+  font-family: 'Ubuntu', sans-serif;
+  color:white;
+  text-align:center;
+  border-radius: 5px;
+  background-color:rgba(119,136,153, .75);
+  
+  z-index: 1;
+}
+
+#_ p {
+  
+}
+
+#_ img {
+
+  width:50%;
+  display:block;
+  position: relative;
+  left:0;
+  right:0;
+  top: 5px;
+  margin: auto;
+}
+ 
+#_ button {
+  position: absolute;
+  right:0;
+  top: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 3px;
+  font: inherit;
+  font-size: .5em;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/*Project Description overlay*/
+
+#_two {
+  display:block;
+  width: 25%;
+  font-size:25px;
+  position: fixed;
+  margin: auto;
+  /*font-family: Helvetica,Arial, sans-serif;*/
+  font-family: 'Ubuntu', sans-serif;
+  color:white;
+  text-align:center;
+  border-radius: 5px;
+  background-color:rgba(119,136,153, .95);
+  
+  z-index: 1;
+}
+
+.child_proj {
+  position: relative;
+}
+
+ 
+
+
+
+
+
+

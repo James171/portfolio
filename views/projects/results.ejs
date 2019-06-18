@@ -1,0 +1,10 @@
+<link rel="stylesheet" type="text/css" href="search.css">
+<h2>Results Page!!</h2>
+
+<% data["Search"].forEach(function(movie) { %>
+    <li> <strong><%= movie["Title"] %></strong> - <%= movie["Year"] %> </li>
+<% }); %>
+
+
+<a href="/projects/search">Search Again!</a> <br>
+<a href="/projects">Projects Page</a>

@@ -1,0 +1,30 @@
+[
+ {
+   "app_title": "Wheel",
+   "app_description": "The following is a simple program styled with CSS that pulls information from a NoSQL Database(MongoDB) to the viewport for the user’s review. (HTML, CSS, Javascript, Node.js, Express.js, MongoDB)"
+ },
+ {
+   "app_title": "Color Game",
+   "app_description": "The Color Game is a simple Program written in Javascript to randomly assign colors to a certain number of tiles where the user is asked to select the particular RGB Color displayed at the top of the screen.(HTML, CSS, Javascript)"
+ },
+ {
+   "app_title": "Patatap Clone",
+   "app_description": "The Patatap Clone is an interactive program that incorporates paper.js(scripting framework) and howler.js(javascript audio library) to map graphics and sounds to a blank canvas which is initiated by users pressing letters on the keyboard.(HTML, CSS, Javascript)"
+ },
+ {
+   "app_title": "IMDb Search",
+   "app_description": "IMDb Search performs basic queries to the IMDb API based on the user’s input.(HTML, CSS, Javascript)"
+ },
+ {
+   "app_title": "YelpCamp",
+   "app_description": "YelpCamp is an interactive Blog where users can post reviews and comments on any Camp they choose. Comments and Camps created by users can only be edited by the Users that create them. (HTML, CSS, Javascript) This is a seperate site, you will need to direct back to my page!"
+ },
+ {
+   "app_title": "Simple To-do List",
+   "app_description": "To-do List is a simple JQuery App that allows users create and delete a set of tasks. (HTML, CSS, Javascript)"
+ },
+ {
+   "app_title": "Catalog",
+   "app_description": "The Catalog App is a digital catalog that has various Movies, Books, and Music stored in a Relational Database(MySQL) allowing users to search certain criteria to return given results. The user can also choose to view only by category(books, movies, music). The Search function and viewing by categories is achieved by various table JOINS and SQL Queries, it follows the principles of filtering input and escaping output. User’s can also suggest Items to be added to the catalog. (HTML, CSS, PHP, MySQL) This is a seperate site, you will need to direct back to my page!"
+ }
+]

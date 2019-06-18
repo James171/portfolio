@@ -1,0 +1,33 @@
+.projects_container {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+
+}
+#nav_container{
+	margin-bottom: 100px;
+}
+
+.child_proj img{
+	width: 400px;
+	height: 400px;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	box-shadow: 16px 29px 29px -9px rgba(0,0,0,0.75);
+}
+
+body{
+	border: 4px solid rgba(119,136,153, .5);
+}
+
+h3{
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	color: slategray;
+	font-size: 1.75em;
+
+}
+
+.child_proj img:hover {
+	border: solid 2px gold;
+}

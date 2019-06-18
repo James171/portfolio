@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+}
+
+#nav_container  {
+	margin: none;
+	padding: none;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	 background-color: slategray;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#home_button{
+	display: flex;
+	margin-right: auto;
+
+}
+
+.nav_item{
+	display: flex;
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+	
+}
+
+.right{
+	margin-right: 10px;
+}
+
+
+
+a { 
+	color: inherit; 
+	text-decoration: none;
+	padding: none;
+	margin-right: 10px;
+	font-size: 1.5em;
+} 
+
+i {
+	margin:0 5px 0px 25px;
+}
+
+
+
+
+.wheel_description {
+
+	text-indent: 2em;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5em;
+	color: slategray;
+	margin: 1em 4em 1em;
+}
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+[
+  {
+    "Image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/html-1024x341.png",
+    "desc": "Hypertext markup language (HTML) is the major markup language used to display Web pages on the Internet. In other words, Web pages are composed of HTML, which is used to display text, images or other resources through a Web browser.",
+    "Name": "html"
+  },
+  {
+    "Image": "https://cdn.lynda.com/course/609030/609030-636402179425109240-16x9.jpg",
+    "desc": "Cascading Style Sheets (CSS) is a standard (or language) that describes the formatting of markup language pages.",
+    "Name": "css"
+  },
+  {
+    "Image": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/CGWd8yk-796x398.jpg",
+    "desc": "Javascript (JS) is a scripting languages, primarily used on the Web. It is used to enhance HTML pages and is commonly found embedded in HTML code. JavaScript is an interpreted language. Thus, it doesn't need to be compiled. JavaScript renders web pages in an interactive and dynamic fashion.",
+    "Name": "javascript"
+  },
+  {
+    "Image": "https://cdn-images-1.medium.com/max/871/1*d2zLEjERsrs1Rzk_95QU9A.png",
+    "desc": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+    "Name": "express"
+  },
+  {
+    "Image": "https://zdnet3.cbsistatic.com/hub/i/r/2018/02/16/8abdb3e1-47bc-446e-9871-c4e11a46f680/resize/470xauto/2ea638bf5532abe5081dabb0fbecbc2d/mongo-db-logo.png",
+    "desc": "MongoDB is a cross-platform and open-source document-oriented database, a kind of NoSQL database. As a NoSQL database, MongoDB shuns the relational database’s table-based structure to adapt JSON-like documents that have dynamic schemas which it calls BSON. ",
+    "Name": "mongodb"
+  },
+  {
+    "Image": "https://media.threatpost.com/wp-content/uploads/sites/103/2014/05/07022011/php.png",
+    "desc": "PHP is a recursive acronym for PHP: Hypertext Preprocessor, a scripting language used to create dynamic and interactive HTML Web pages. A server processes PHP commands when a website visitor opens a page, then sends results to the visitor’s browser.",
+    "Name": "php"
+  },
+  {
+    "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWliL_Yx5s4KAJ9iEzli4IN2hSy5mlXvOrKLTHoe5HOOChlV4Mew",
+    "desc": "C# is a general object-oriented programming (OOP) language for networking and Web development. C# is specified as a common language infrastructure (CLI) language.",
+    "Name": "c#"
+  },
+  {
+    "Image": "https://3gu9o71jpajrhhohe38gzl81-wpengine.netdna-ssl.com/wp-content/uploads/2016/08/Bootstrap-300x240.png",
+    "desc": "Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.",
+    "Name": "bootstrap"
+  },
+  {
+    "Image": "https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/04/1461315888semantic.png",
+    "desc": "Semantic is a development framework that helps create beautiful, responsive layouts using human-friendly HTML",
+    "Name": "semantic_ui"
+  },
+  {
+    "Image": "https://miro.medium.com/max/800/1*-sXPcA6dNWFaI9Cx69QXAw.jpeg",
+    "desc": "Java is a programming language that produces software for multiple platforms. When a programmer writes a Java application, the compiled code (known as bytecode) runs on most operating systems (OS), including Windows, Linux and Mac OS. Java derives much of its syntax from the C and C++ programming languages.",
+    "Name": "java"
+  },
+  {
+    "Image": "https://cdn-images-1.medium.com/max/1200/0*s1Goua9K1MuNuapv.jpg",
+    "desc": "jQuery is a concise and fast JavaScript library that can be used to simplify event handling, HTML document traversing, Ajax interactions and animation for speedy website development. jQuery simplifies the HTML's client-side scripting, thus simplifying Web 2.0 applications development.",
+    "Name": "jQuery"
+  },
+  {
+    "Image": "https://www.sitebth.com/wp-content/uploads/2017/11/Object-oriented-programming-concept-600x300.png",
+    "desc": "Object-oriented programming (OOP) is a software programming model constructed around objects. This model compartmentalizes data into objects (data fields) and describes object contents and behavior through the declaration of classes (methods).\n",
+    "Name": "oop"
+  }
+]
