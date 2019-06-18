@@ -6,7 +6,7 @@ var express = require("express"),
 description = require("./projdesc.json"),
    mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://jfish2486:DBmongo24!@cluster0-wtgf6.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://clbfshr@yahoo.com:DBmongo24!@cluster0-wtgf6.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
 app.use(express.static("public"));
 app.use(express.static("Images"));
 
