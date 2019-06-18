@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "browserify app.js -o bundle.js"
+    "build": "browserify app.js -o bundle.js",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
