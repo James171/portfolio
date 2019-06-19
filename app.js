@@ -6,13 +6,22 @@ var express = require("express"),
 description = require("./projdesc.json"),
    mongoose = require("mongoose");
 
+   const MongoClient = require("mongodb").MongoClient;
+   const ObjectId = require("mongodb").ObjectID;
+
 // mongoose.connect("mongodb://127.0.0.1:27017/users", { useNewUrlParser: true });
-mongoose.connect("mongodb+srv://jfish2486:DBmongo24!@cluster0-wtgf6.mongodb.net/test?retryWrites=true&w=majority/users", { useNewUrlParser: true });
+// mongoose.connect("mongodb+srv://jfish2486:DBmongo24!@cluster0-wtgf6.mongodb.net/test?retryWrites=true&w=majority", {dbName: 'users'});
+
+const CONNECTION_URL = "mongodb+srv://jfish2486:DBmongo24!@cluster0-wtgf6.mongodb.net/test?retryWrites=true&w=majority";
+const DATABASE_NAME = "users";
+
+
+
 app.use(express.static("public"));
 app.use(express.static("Images"));
 
 
-
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
@@ -27,48 +36,44 @@ var technologySchema = new mongoose.Schema({
 
 var Technology = mongoose.model("Technology", technologySchema);
 
+var database, collection;
 
-// async functions await 
-// const getDB = async function(){
-// var users = new Technology();
-//           var userData = []; // Created Empty Array
-//          return await Technology.find({}, function(err, data) {
-//             data.forEach(function(value) {
-//               userData.push(value);
-//             });
-//           });
-// }
-
-// var Data = getDB().then(userData => {
-//   console.log(userData)
-// })
-// .catch(err => console.error(err))
-
-
-
-
-
-
-// In app.js:
-
-
-// In index.js
-
-
-
-
-app.get("/",  function(req, res){
-    Technology.find({}, function(err, alltechrecords){
-        if(err){
-            console.log(err);
-        }else{
-
-            res.render("home", {technologies: alltechrecords});
+app.listen(process.env.PORT || 3000, () => {
+    MongoClient.connect(CONNECTION_URL, { useNewUrlParser: true }, (error, client) => {
+        if(error) {
+            throw error;
         }
+        database = client.db(DATABASE_NAME);
+        collection = database.collection("description");
+        console.log("Connected to `" + DATABASE_NAME + "`!");
+        
+        // console.log(database.collection.find({}));
+    });
+});
+
+app.get("/", (request, response) => {
+    collection.find({}).toArray((error, result) => {
+        if(error) {
+            return response.status(500).send(error);
+        }
+        response.render("home", {technologies: result});
+    });
+});
+
+
+
+// app.get("/",  function(req, res){
+//     Technology.find({}, function(err, alltechrecords){
+//         if(err){
+//             console.log(err);
+//         }else{
+
+//             res.render("home", {technologies: alltechrecords});
+//         }
     
-      // res.render("home"); 
-});
-});
+//       // res.render("home"); 
+// });
+// });
 
    
 app.get("/about", function(req, res){
@@ -110,13 +115,9 @@ app.get("/projects/results", function(req, res){
 //         res.render("projects/"+projectName+"")
 //     });
     
+// var database, collection;
 
-
-app.listen(process.env.PORT || 3000, function(){
-    console.log("The YelpCamp Server has Started!");
-});
-
-
-// app.listen(3000, function(){
+// app.listen(process.env.PORT || 3000, function(){
 //     console.log("The YelpCamp Server has Started!");
 // });
+
