@@ -47,7 +47,7 @@ app.listen(process.env.PORT || 3000, () => {
         collection = database.collection("description");
         console.log("Connected to `" + DATABASE_NAME + "`!");
         
-        // console.log(database.collection.find({}));
+        
     });
 });
 
@@ -62,24 +62,18 @@ app.get("/", (request, response) => {
 
 
 
-// app.get("/",  function(req, res){
-//     Technology.find({}, function(err, alltechrecords){
-//         if(err){
-//             console.log(err);
-//         }else{
 
-//             res.render("home", {technologies: alltechrecords});
-//         }
-    
-//       // res.render("home"); 
-// });
-// });
 
    
 app.get("/about", function(req, res){
         res.render("about");        
             
     });
+
+app.get("/interest", function(req, res){
+    res.render("interest");        
+        
+});
 
 app.get("/projects", function(req, res){
         res.render("projects/index", {config: description});        
