@@ -6,13 +6,20 @@ var express = require("express"),
 description = require("./projdesc.json"),
    mongoose = require("mongoose");
 
+   var os = require('os');
+
+var user_name = process.env.USER_portfolio;
+var pass_word = process.env.PASS_portfolio;
+
+
+// var testingvar = os.environ['USER_portfolio']
+
+
    const MongoClient = require("mongodb").MongoClient;
    const ObjectId = require("mongodb").ObjectID;
 
-// mongoose.connect("mongodb://127.0.0.1:27017/users", { useNewUrlParser: true });
-// mongoose.connect("mongodb+srv://jfish2486:DBmongo24!@cluster0-wtgf6.mongodb.net/test?retryWrites=true&w=majority", {dbName: 'users'});
 
-const CONNECTION_URL = "mongodb+srv://jfish2486:DBmongo24!@cluster0-wtgf6.mongodb.net/test?retryWrites=true&w=majority";
+const CONNECTION_URL = `mongodb+srv://${user_name}:${pass_word}@cluster0-wtgf6.mongodb.net/test?retryWrites=true&w=majority`;
 const DATABASE_NAME = "users";
 
 
@@ -102,16 +109,4 @@ app.get("/projects/results", function(req, res){
 
 
 
-
-// app.get("/projects/:project", function(req, res){
-//         var projectName = req.params.project;
-//         console.log(projectName); 
-//         res.render("projects/"+projectName+"")
-//     });
-    
-// var database, collection;
-
-// app.listen(process.env.PORT || 3000, function(){
-//     console.log("The YelpCamp Server has Started!");
-// });
 
